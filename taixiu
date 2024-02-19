@@ -1,0 +1,249 @@
+#include <bits/stdc++.h>
+#include <iomanip> // Để sử dụng setw
+#include <chrono>
+#include <thread>
+
+
+using namespace std;
+
+int main() {
+    srand(time(0));
+    
+    cout << "===================WIN 79=========================" << endl;
+    double tien;string nhap;
+     int sodu = 500;
+     
+    do{
+    int giay=10;//tương ứng với số giây để lùi
+	int sodumoi = sodu;
+	cout<<"-----------------------------------                        ---------------"<<endl;
+    cout << "TAI hay XIU: "<<"nhan 'exit'de thoat  |"<< "                        |so du:"<<sodumoi<<"$|" <<endl;	
+    cout<<"-----------------------------------                        ---------------"<<endl;
+    cout<<"-------"<<endl<<"|";
+    cin >> nhap;
+    cout<<"-------"<<endl;
+    
+    
+    if (nhap == "exit") {
+            break;
+        }
+        cout << "cuoc bao nhieu: ";
+    cin >> tien;
+    if(sodumoi <=0){
+    	cout<<"ban da het tien vui long nap them."<<endl<<"MB:29111225112007";
+    	break;
+	}
+	if(tien>sodumoi){
+		cout<<"so tien qua cao vui long nhap lai: "<<endl;
+		continue;
+	}
+	//vòng lặp while để đếm;
+    if(nhap=="tai"||nhap=="xiu"&&tien>0){
+    while(giay>0){
+    	cout<<"\r"<<setw(2)<<giay<<flush;
+    	this_thread::sleep_for(chrono::seconds(1));
+    	giay--;
+}
+cout<<"\r";
+//giá trị sẽ biến mất khi \r
+	
+    
+    int xucxac1 = rand() % 6 + 1;
+    int xucxac2 = rand() % 6 + 1;
+    int xucxac3 = rand() % 6 + 1;
+    int sum = xucxac1 + xucxac2 + xucxac3;
+    
+    
+	 if(xucxac1==1){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|   *   |"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+	 if(xucxac2==1){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|   *   |"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+	 if(xucxac3==1){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|   *   |"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+	 if(xucxac1==2){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|   *   |"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|   *   |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+	if(xucxac2==2){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|   *   |"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|   *   |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+	 if(xucxac3==2){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|   *   |"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|   *   |"<<endl;
+	 	cout<<"|_______|"<<endl;
+}
+	 if(xucxac1==3){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|     * |"<<endl;
+	 	cout<<"|   *   |"<<endl;
+	 	cout<<"| *     |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+	  if(xucxac2==3){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|     * |"<<endl;
+	 	cout<<"|   *   |"<<endl;
+	 	cout<<"| *     |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+	  if(xucxac3==3){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"|     * |"<<endl;
+	 	cout<<"|   *   |"<<endl;
+	 	cout<<"| *     |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+	 if(xucxac1==4){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+	  if(xucxac2==4){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+	  if(xucxac3==4){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+	  if(xucxac1==5){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"|   *   |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+	  if(xucxac2==5){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"|   *   |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+	  if(xucxac3==5){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"|   *   |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+	 
+	  if(xucxac1==6){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+	  if(xucxac2==6){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+	 if(xucxac3==6){
+	 	cout<<" _______"<<endl;
+	 	cout<<"|       |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"| *   * |"<<endl;
+	 	cout<<"|_______|"<<endl;
+	 }
+
+        
+    if (sum > 10 && nhap == "tai") {
+        cout<<"-------"<<endl;
+        cout << "| TAI |" << endl;
+        cout<<"-------"<<endl;
+		cout << "ban duoc: " << tien << endl;
+        sodu += tien; // Cập nhật giá trị của sodu sau khi trừ
+        cout << "SO DU: " << sodu <<"$"<< endl;cout<<" "<<endl;
+    }
+    else if (sum > 10 && nhap == "xiu") {
+    	cout<<"-------"<<endl;
+        cout <<"| TAI |" << endl;
+        cout<<"-------"<<endl;
+		cout << "ban mat: " << tien << endl;
+        sodu -= tien; // Cập nhật giá trị của sodu sau khi cộng
+        cout << "SO DU: " << sodu <<"$"<< endl<<endl;cout<<" "<<endl;
+    }
+    else if (sum <= 10 && nhap == "tai") {
+    	cout<<"-------"<<endl;
+        cout << "| XIU |" << endl;
+        cout<<"-------"<<endl;
+		cout << "ban mat: " << tien << endl;
+        sodu -= tien; // Cập nhật giá trị của sodu sau khi cộng
+        cout << "SO DU: " << sodu <<"$"<< endl<<endl;cout<<" "<<endl;
+    }
+    else if (sum <= 10 && nhap == "xiu") {
+    	cout<<"-------"<<endl;
+        cout << "| XIU |" << endl;
+        cout<<"-------"<<endl;
+		cout << "ban duoc: " << tien << endl<<endl;
+        sodu += tien; // Cập nhật giá trị của sodu sau khi trừ
+        cout << "SO DU: " << sodu<<"$" << endl;
+        cout<<" "<<endl;
+        
+}
+    
+}
+
+else{
+	cout<<"nhap sai vui long nhap lai"<<endl;
+	cout<<" "<<endl;
+}
+
+}while(true);
+
+    return 0;
+}
